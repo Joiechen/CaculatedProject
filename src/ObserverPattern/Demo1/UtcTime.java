@@ -4,7 +4,11 @@ package ObserverPattern.Demo1;
  * Created by test on 18/1/12.
  */
 public class UtcTime extends TimeSubject {
+
     @Override
-    public void NotifyAllClocks(){
+    public void notifyAllClocks(){
+        for (MainClock clock:super.clocks.values()) {
+            clock.setLocalTime(MainClock.toLocalTime(this.utcZeroTime));
+        }
     }
 }

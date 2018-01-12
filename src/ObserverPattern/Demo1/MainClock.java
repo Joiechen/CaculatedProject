@@ -4,7 +4,7 @@ package ObserverPattern.Demo1;
  * Created by test on 18/1/12.
  */
 public abstract class MainClock {
-    protected static int UTC_OFFSET = 0;
+    protected int UTC_OFFSET = 0;
     protected int localTime = 0;
 
     public MainClock(int utcOffset) {

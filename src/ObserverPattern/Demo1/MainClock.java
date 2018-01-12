@@ -4,8 +4,12 @@ package ObserverPattern.Demo1;
  * Created by test on 18/1/12.
  */
 public abstract class MainClock {
-    protected static final int UTC_OFFSET = 0;
+    protected static int UTC_OFFSET = 0;
     protected int localTime = 0;
+
+    public MainClock(int utcOffset) {
+        UTC_OFFSET = utcOffset;
+    }
 
     public abstract void setLocalTime(int localTime);
 

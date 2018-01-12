@@ -5,7 +5,7 @@ package ObserverPattern.Demo1;
  */
 public class CityClock extends MainClock{
     public CityClock(int utcOffset) {
-        super();
+        super(utcOffset);
     }
 
     @Override

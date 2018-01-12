@@ -10,7 +10,7 @@ public class UtcTime extends TimeSubject {
     @Override
     public void notifyAllClocks(){
         for (MainClock clock:super.clocks.values()) {
-            clock.setLocalTime(MainClock.toLocalTime(this.utcZeroTime));
+            clock.setLocalTimeFromUtcZeroTime(this.utcZeroTime);
         }
     }
 

@@ -20,4 +20,8 @@ public abstract class MainClock {
     public void setLocalTimeFromUtcZeroTime(int utcZeroTime) {
         this.localTime = MainClock.makeHourWithin0To23(utcZeroTime + this.UTC_OFFSET);
     }
+
+    private static int makeHourWithin0To23(int hour) {
+        return (hour + 24) % 24;
+    }
 }

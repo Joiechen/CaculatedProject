@@ -6,7 +6,7 @@ package ObserverPattern.Demo1;
 public class PhoneClock extends MainClock {
     @Override
     public void setLocalTime(int localTime) {
-        this.localTime = localTime;
+        super.localTime = localTime;
         this.utcTime.setUtcZeroTime(localTime - UTC_OFFSET);
     }
 }

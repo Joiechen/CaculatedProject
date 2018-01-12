@@ -5,7 +5,7 @@ package ObserverPattern.Demo1;
  */
 public abstract class MainClock {
     private static final int UTC_OFFSET = 0;
-    private int localTime = 0;
+    protected int localTime = 0;
 
     public abstract void setLocalTime(int localTime);
 

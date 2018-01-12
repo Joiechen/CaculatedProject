@@ -18,6 +18,6 @@ public abstract class MainClock {
     }
 
     public void setLocalTimeFromUtcZeroTime(int utcZeroTime) {
-        this.localTime = utcZeroTime + this.UTC_OFFSET;
+        this.localTime = MainClock.makeHourWithin0To23(utcZeroTime + this.UTC_OFFSET);
     }
 }

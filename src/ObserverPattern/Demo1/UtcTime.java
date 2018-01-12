@@ -5,6 +5,8 @@ package ObserverPattern.Demo1;
  */
 public class UtcTime extends TimeSubject {
 
+    private int utcZeroTime;
+
     @Override
     public void notifyAllClocks(){
         for (MainClock clock:super.clocks.values()) {

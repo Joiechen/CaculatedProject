@@ -15,4 +15,8 @@ public class PhoneClock extends MainClock {
         super.localTime = localTime;
         this.utcTime.setUtcZeroTime(localTime - UTC_OFFSET);
     }
+
+    public void setUtcTime(UtcTime utcTime) {
+        this.utcTime = utcTime;
+    }
 }
